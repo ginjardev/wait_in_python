@@ -45,7 +45,7 @@ In order to run your tests on LambdaTest cloud platform, you will need to set yo
 
 See image below:
 
-!\[image\](<https://postimg.cc/FYPd5p4q>)
+ ![image](https://postimg.cc/S2y29Pkg)
 
 * **Linux/mac OS**
 
@@ -69,4 +69,4 @@ set LT_ACCESS_KEY="YOUR ACCESS KEY"
 pytest -s
 ```
 
-Your test results would be displayed on the console (or command-line interface if you are using terminal) and on LambdaTest automation dashboard. 
+Your test results would be displayed on the console (or command-line interface if you are using terminal) and on LambdaTest automation dashboard.
