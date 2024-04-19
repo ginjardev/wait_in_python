@@ -2,3 +2,4 @@ env/
 .env
 wait_in_python.py
 test_selenium_elements.py
+test_testing.py

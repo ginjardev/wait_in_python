@@ -7,21 +7,21 @@ from selenium import webdriver
 def driver(request):
     test_name = request.node.name
     build = environ.get("BUILD", "Python Wait - Selenium")
-    tunnel_id = environ.get("TUNNEL", False)
     username = environ.get("LT_USERNAME", None)
     access_key = environ.get("LT_ACCESS_KEY", None)
-
     selenium_endpoint = "http://{}:{}@hub.lambdatest.com/wd/hub".format(
         username, access_key
     )
+
     chrome_options = webdriver.ChromeOptions()
+    chrome_options.page_load_strategy= "normal"
     option = {
-        "platform": "Windows 10",
+        "platform": "macOS Sonoma",
         "version": "latest",
         "name": test_name,
         "Build": build,
         "video": True,
-        "visual": True,
+        "visual": False,
         "network": True,
         "console": True,
     }
@@ -51,4 +51,3 @@ def pytest_runtest_makereport(item, call):
     # set a report attribute for each phase of a call, which can
     # be "setup", "call", "teardown"
     setattr(item, "rep_" + rep.when, rep)
-

@@ -7,7 +7,7 @@ Pytest is the browser automation framework used to execute the tests.
 
 ### Setup and Installation
 
-Before you proceed, ensure that you have **Python3.x** and **Pip** install on your computer.
+Before you proceed, ensure that you have **Python3.x** and **pip** install on your computer.
 
 **Step 1:** Clone this repository and navigate to the code directory as shown below:
 
@@ -39,13 +39,13 @@ pip install -r requirements.txt
 
 ### Authentication
 
-**Step 5:** Set LambdaTest **Username** and **Access Key** in environment variables.
+**Step 5:** Set [LambdaTest](https://www.lambdatest.com/) **Username** and **Access Key** in environment variables.
 
-In order to run your tests on LambdaTest cloud platform, you will need to set your LambdaTest username and access key in the environment variables. Click the **Access Key** button at the top-right of the Automation Dashboard to access it.
+In order to run your tests on LambdaTest cloud platform, you will need to set your [LambdaTest profile](https://accounts.lambdatest.com/dashboard) username and access key in the environment variables. Click the **Access Key** button at the top-right of the Automation Dashboard to access it.
 
 See image below:
 
-[access-key.png](https://postimg.cc/S2y29Pkg)
+ ![username_access](https://github.com/ginjardev/wait_in_python/issues/1#issue-2252483560)
 
 * **Linux/mac OS**
 
@@ -70,3 +70,13 @@ pytest -s
 ```
 
 Your test results would be displayed on the console (or command-line interface if you are using terminal) and on LambdaTest automation dashboard.
+
+### Run Parallel Tests
+
+To run \[parallel tests using PyTest\](<https://www.lambdatest.com/blog/pytest-tutorial-parallel-testing-with-selenium-grid/>), we would have to execute the below command in the terminal:
+
+```bash
+pytest -n auto
+```
+
+

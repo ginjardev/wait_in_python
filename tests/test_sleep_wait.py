@@ -6,8 +6,11 @@ import time
 
 @pytest.mark.usefixtures("driver")
 def test_sleep_wait(driver):
+    class_title_elements_count = 128
     elements_count = SleepWait(driver)
-    time.sleep(5)
+
+    # Python sleep method used to wait
+    time.sleep(5) 
+
     count = elements_count.get_elements_count()
-    print(count)
-    assert count == 128
+    assert count == class_title_elements_count, f"Expected {count} to be {class_title_elements_count}"
