@@ -6,7 +6,7 @@ from selenium import webdriver
 @pytest.fixture(scope="function")
 def driver(request):
     test_name = request.node.name
-    build = environ.get("BUILD", "Sample PY Build")
+    build = environ.get("BUILD", "Python Wait - Selenium")
     tunnel_id = environ.get("TUNNEL", False)
     username = environ.get("LT_USERNAME", None)
     access_key = environ.get("LT_ACCESS_KEY", None)
