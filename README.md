@@ -45,7 +45,7 @@ In order to run your tests on LambdaTest cloud platform, you will need to set yo
 
 See image below:
 
-!\[image\](<https://tinyurl.com/24hta9dz>)
+ ![image](./access_key.png)
 
 * **Linux/mac OS**
 
