@@ -45,7 +45,7 @@ In order to run your tests on LambdaTest cloud platform, you will need to set yo
 
 See image below:
 
- ![username_access](https://github.com/ginjardev/wait_in_python/issues/1#issue-2252483560)
+!\[image\](<https://tinyurl.com/24hta9dz>)
 
 * **Linux/mac OS**
 
@@ -73,7 +73,7 @@ Your test results would be displayed on the console (or command-line interface i
 
 ### Run Parallel Tests
 
-To run \[parallel tests using PyTest\](<https://www.lambdatest.com/blog/pytest-tutorial-parallel-testing-with-selenium-grid/>), we would have to execute the below command in the terminal:
+To run [parallel tests using PyTest](https://www.lambdatest.com/blog/pytest-tutorial-parallel-testing-with-selenium-grid/), we would have to execute the below command in the terminal:
 
 ```bash
 pytest -n auto

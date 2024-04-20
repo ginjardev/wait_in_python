@@ -26,7 +26,7 @@ def driver(request):
         "console": True,
     }
 
-    chrome_options.set_capability("LT:Options", option)
+    chrome_options.set_capability("LT:Options", option_sw)
     browser = webdriver.Remote(
         command_executor=selenium_endpoint, options=chrome_options
     )

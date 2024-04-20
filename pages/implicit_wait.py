@@ -13,12 +13,9 @@ class ImplicitWait:
         driver.set_page_load_timeout(10)
 
         self._my_account = self.driver.find_element(By.LINK_TEXT, "My account")
-        self._is_email_input_displayed = driver.find_element(
-            By.NAME, "email"
-        ).is_displayed()
 
     def click_my_account(self):
         self._my_account.click()
 
     def is_email_displayed(self):
-        return self._is_email_input_displayed
+        return self.driver.find_element(By.NAME, "email").is_displayed()
