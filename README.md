@@ -79,4 +79,8 @@ To run [parallel tests using PyTest](https://www.lambdatest.com/blog/pytest-tuto
 pytest -n auto
 ```
 
+### Results
 
+View test results on LambdaTest web automation dashboard.
+
+ ![result](./auto_test_res.png)
