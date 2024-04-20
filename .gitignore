@@ -1,5 +1,9 @@
 env/
 .env
-wait_in_python.py
 test_selenium_elements.py
-test_testing.py
+
+__pycache__/
+.pytest_cache/
+
+pages/explicit_wait.py
+tests/test_explicit_wait.py

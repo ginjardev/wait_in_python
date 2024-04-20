@@ -1,12 +1,13 @@
 from os import environ
 import pytest
 from selenium import webdriver
+from smartwait_option import option_sw
 
 
 @pytest.fixture(scope="function")
 def driver(request):
     test_name = request.node.name
-    build = environ.get("BUILD", "Python Wait - Selenium")
+    build = environ.get("BUILD", "Python Wait Selenium")
     username = environ.get("LT_USERNAME", None)
     access_key = environ.get("LT_ACCESS_KEY", None)
     selenium_endpoint = "http://{}:{}@hub.lambdatest.com/wd/hub".format(
@@ -14,7 +15,6 @@ def driver(request):
     )
 
     chrome_options = webdriver.ChromeOptions()
-    chrome_options.page_load_strategy= "normal"
     option = {
         "platform": "macOS Sonoma",
         "version": "latest",
@@ -25,6 +25,7 @@ def driver(request):
         "network": True,
         "console": True,
     }
+
     chrome_options.set_capability("LT:Options", option)
     browser = webdriver.Remote(
         command_executor=selenium_endpoint, options=chrome_options

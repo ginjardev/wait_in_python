@@ -8,15 +8,10 @@ class FluentWait:
     def __init__(self, driver):
         self.driver = driver
         self.driver.get("https://ecommerce-playground.lambdatest.io/")
-
-        value = WebDriverWait(driver, 10).until(
-            EC.presence_of_all_elements_located((By.CLASS_NAME, "nav-item"))
-        )
-        if value == True:
-            print("Page Load Completed")
-        else:
-            raise ElementNotVisibleException
         
+        # Ensure page load complete
+        driver.set_page_load_timeout(10)
+
         self._my_account = self.driver.find_element(By.LINK_TEXT, "My account")
         self._password_input = driver.find_element(By.NAME, "password")
 
