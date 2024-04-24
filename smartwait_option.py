@@ -1,4 +1,4 @@
-option_sw = {
+option_smartwait = {
     "platform": "macOS Sonoma",
     "version": "latest",
     "name": "Selenium Pytest",

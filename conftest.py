@@ -1,7 +1,7 @@
 from os import environ
 import pytest
 from selenium import webdriver
-from smartwait_option import option_sw
+from smartwait_option import option_smartwait
 
 
 @pytest.fixture(scope="function")
@@ -26,7 +26,7 @@ def driver(request):
         "console": True,
     }
 
-    chrome_options.set_capability("LT:Options", option_sw)
+    chrome_options.set_capability("LT:Options", option)
     browser = webdriver.Remote(
         command_executor=selenium_endpoint, options=chrome_options
     )

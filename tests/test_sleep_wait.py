@@ -1,5 +1,4 @@
 import pytest
-from selenium.webdriver.common.by import By
 from pages.sleep_wait import *
 import time
 
@@ -13,4 +12,5 @@ def test_sleep_wait(driver):
     time.sleep(5) 
 
     count = elements_count.get_elements_count()
-    assert count == class_title_elements_count, f"Expected {count} to be {class_title_elements_count}"
+    assert count == class_title_elements_count\
+    , f"Expected {count} to be {class_title_elements_count}"

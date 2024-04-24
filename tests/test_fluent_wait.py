@@ -17,4 +17,5 @@ def test_fluent_wait(driver):
     
     my_password = "password"
     password_input.send_keys(my_password)
-    assert password_input.get_property("value") == my_password, f"Expected password value to equal {my_password}"
+    assert password_input.get_property("value") == my_password \
+    , f"Expected password value to equal {my_password}"
