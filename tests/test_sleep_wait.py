@@ -5,7 +5,7 @@ import time
 
 @pytest.mark.usefixtures("driver")
 def test_sleep_wait(driver):
-    class_title_elements_count = 128
+    class_title_elements_count = 34
     elements_count = SleepWait(driver)
 
     # Python sleep method used to wait

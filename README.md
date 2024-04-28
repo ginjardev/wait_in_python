@@ -83,4 +83,4 @@ pytest -n auto
 
 View test results on LambdaTest web automation dashboard.
 
- ![result](./auto_test_res.png)
+ ![dashboard](final_dashboard_python_wait.png)

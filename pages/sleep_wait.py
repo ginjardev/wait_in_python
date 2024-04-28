@@ -6,7 +6,7 @@ class SleepWait:
         self.driver = driver
         self.driver.get("https://ecommerce-playground.lambdatest.io/")
         
-        self._elements = self.driver.find_elements(By.CLASS_NAME, value="title")
+        self._elements = self.driver.find_elements(By.CLASS_NAME, value="info")
         self._elements_count = len(self._elements)
 
     def get_elements_count(self):
